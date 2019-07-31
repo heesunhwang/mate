@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'picnics/index'
   root 'home#index'
 
   resources :diaries

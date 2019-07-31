@@ -1,0 +1,60 @@
+<div class="mid-container">
+  <div style="display:flex;justify-content:flex-end;margin:10px 0;">
+    <%= form_tag '', class: "form-inline my-2 my-lg-0", method: "get", enforce_utf8: false do %>
+      <%= text_field :search, params[:search], type: "search", class: "form-control mr-sm-2", placeholder: "Search" %>
+      <%= submit_tag "Search", name: nil, class: "btn btn-success my-2 my-sm-0" %>
+    <% end %>
+  </div>
+
+  <div>
+    <ul class="nav nav-tabs" style="display:flex;justify-content:space-around;margin-bottom:10px;">
+      <li class="active"><a data-toggle="tab" href="#home" class="nav-link active">전체</a></li>
+      <% @areas.each_with_index do |a, i| %>
+          <li><a data-toggle="tab" href="#menu<%= i %>" class="nav-link"><%= a %></a></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="category_btn" style="text-align:center;">
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+    <button type="button" class="btn btn-secondary">Category</button>
+  </div>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane in active">
+      <%= render 'tab-home' %>
+    </div>
+    <div id="menu0" class="tab-pane fade">
+      <div>Menu0</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div>Menu1</div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <div>Menu2</div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <div>Menu3</div>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+      <div>Menu4</div>
+    </div>
+    <div id="menu5" class="tab-pane fade">
+      <div>Menu5</div>
+    </div>
+    <div id="menu6" class="tab-pane fade">
+      <div>Menu6</div>
+    </div>
+    <div id="menu7" class="tab-pane fade">
+      <div>Menu7</div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
