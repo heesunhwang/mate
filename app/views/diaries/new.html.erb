@@ -1,0 +1,5 @@
+<%= form_for Diary.new do |f| %>
+    제목: <%= f.text_field :title %><br>
+    내용: <%= f.text_field :content %><br>
+    <%= f.submit %>
+<% end %>

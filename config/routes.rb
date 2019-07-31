@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'trips/index'
-  get 'calendars/index'
   root 'home#index'
-
+  resources :diaries
+  resources :calendars
   devise_for :users
 end
