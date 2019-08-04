@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+User.create(email: 'qwe@qwe', password: 'qweqwe', password_confirmation: 'qweqwe', username: 'qweqwe', image: open('app/assets/images/pic2.jpg'))
+User.create(email: 'asd@asd', password: 'asdasd', password_confirmation: 'asdasd', username: 'asdasd', image: open('app/assets/images/pic2.jpg'))
+
+[Item].each do |a|
+    a.generate_seed
+end

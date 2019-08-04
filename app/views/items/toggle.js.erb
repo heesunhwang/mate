@@ -1,0 +1,2 @@
+console.log("<%= @item.id %>")
+$('#like_toggle_<%= @item.id %>').html('<%= j(render("user_items/like", item: @item)) %>');

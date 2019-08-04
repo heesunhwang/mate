@@ -1,0 +1,26 @@
+<div class="card item-review" id="review_<%= review.id %>" style="margin-bottom: 20px">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+        <p class="text-secondary text-center" style="margin-top: 10px; margin-bottom: 0"><%= review.created_at.strftime('%F %T') %></p>
+      </div>
+      <div class="col-md-10">
+        <p>
+          <a class="float-left" href="">
+            <strong><%= review.user.email %></strong>
+          </a>
+        </p>
+        <div class="clearfix"></div>
+        <p><%= review.content %></p>
+        <p>
+          <%= link_to item_review_path(@item, review), method: :delete, remote: true, class: "float-right btn btn-outline-primary ml-2" do %>
+            <i class="fa fa-reply"></i>Delete
+          <% end %>
+          <a class="float-right btn text-white btn-danger">
+          <i class="fa fa-heart"></i>Like</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
