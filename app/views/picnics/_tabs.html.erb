@@ -1,8 +1,8 @@
 <div class="mid-container">
   <div style="display:flex;justify-content:flex-end;margin:10px 0;">
-    <%= form_tag '', class: "form-inline my-2 my-lg-0", method: "get", enforce_utf8: false do %>
-      <%= text_field :search, params[:search], type: "search", class: "form-control mr-sm-2", placeholder: "Search" %>
-      <%= submit_tag "Search", name: nil, class: "btn btn-success my-2 my-sm-0" %>
+    <%= form_tag picnics_path, class: "form-inline my-2 my-lg-0", method: "get", enforce_utf8: false do %>
+      <%= text_field :search, params[:search], type: "search", class: "form-control mr-sm-2", placeholder: "검색하기" %>
+      <%= submit_tag "검색", name: nil, class: "btn btn-success my-2 my-sm-0" %>
     <% end %>
   </div>
 
@@ -17,7 +17,7 @@
 
   <div class="category_btn" style="text-align:center;">
     <% @categories.each do |ca| %>
-      <button type="button" class="btn btn-secondary"><%= ca %></button>
+      <button type="button" class="btn btn-secondary category_btn"><%= ca %></button>
     <% end %>
   </div>
 
@@ -34,3 +34,9 @@
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+  // $('.category_btn button').on("click",function(){
+  //   $.get('/picnics/'+$(this).text() +'/category')
+  // })
+</script>

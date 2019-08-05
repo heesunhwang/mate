@@ -1,6 +1,6 @@
 <div class="tab-items py-5">
   <div class="row">
-    <% Item.all.each do |i| %>
+    <% @search_result.each do |i| %>
       <div class="col-lg-4 col-md-6 mb-4">
         <%= link_to item_path(i) do %>
           <div class="card h-100">

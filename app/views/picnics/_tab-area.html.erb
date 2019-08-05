@@ -2,14 +2,16 @@
   <div class="row">
     <% Item.where(area:area).each do |i| %>
       <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <%= image_tag i.image_url, class: "item_picture" %>
-          <div class="block_title">
-            <h6 class="item_title" style="margin-left:10px;display:flex;justify-content:space-between;">
-              <span><%= i.title %></span><span><%= i.price %></span>
-            </h6>
+        <%= link_to item_path(i) do %>
+          <div class="card h-100">
+            <%= image_tag i.image_url, class: "item_picture" %>
+            <div class="block_title">
+              <h6 class="item_title" style="margin-left:10px;display:flex;justify-content:space-between;">
+                <span><%= i.title %></span><span><%= i.price %></span>
+              </h6>
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
     <% end %>
   </div>

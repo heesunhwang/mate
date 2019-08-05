@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'reviews/index'
-  get 'reviews/new'
   root 'home#index'
 
   resources :diaries
