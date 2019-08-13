@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_04_155925) do
+ActiveRecord::Schema.define(version: 2019_08_13_101745) do
 
   create_table "diaries", force: :cascade do |t|
     t.integer "user_id"
@@ -30,6 +30,14 @@ ActiveRecord::Schema.define(version: 2019_08_04_155925) do
     t.datetime "updated_at", null: false
     t.integer "area"
     t.integer "category"
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image"
   end
 
   create_table "reviews", force: :cascade do |t|

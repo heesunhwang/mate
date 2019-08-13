@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   root 'home#index'
 
   resources :diaries
