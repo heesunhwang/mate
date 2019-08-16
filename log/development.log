@@ -1,0 +1,2615 @@
+Started GET "/" for 1.214.48.195 at 2019-08-10 12:57:16 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (570.2ms)
+Completed 200 OK in 646ms (Views: 640.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 1.214.48.195 at 2019-08-10 12:57:16 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calendars" for 1.214.48.195 at 2019-08-10 12:57:20 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CalendarsController#index as HTML
+  Rendering calendars/index.html.erb within layouts/application
+  Rendered calendars/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/diaries" for 1.214.48.195 at 2019-08-10 12:57:21 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DiariesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 1.214.48.195 at 2019-08-10 12:57:22 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/shared/_carousel.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 43ms (Views: 31.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/picnics" for 1.214.48.195 at 2019-08-10 12:57:26 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PicnicsController#index as HTML
+  Rendering picnics/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/picnics/_tab-all.html.erb:3
+  Rendered picnics/_tab-all.html.erb (17.9ms)
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 0]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (4.9ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 1]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.7ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 2]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.8ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 3]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (3.3ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 4]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.4ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 5]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (3.0ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 6]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (1.3ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 7]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (6.0ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 8]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (0.9ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 9]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (0.8ms)
+  Rendered picnics/_tabs.html.erb (60.3ms)
+  Rendered picnics/index.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 85ms (Views: 77.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/diaries" for 1.214.48.195 at 2019-08-10 12:57:34 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DiariesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 1.214.48.195 at 2019-08-10 12:57:34 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/shared/_carousel.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calendars" for 1.214.48.195 at 2019-08-10 12:57:36 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CalendarsController#index as HTML
+  Rendering calendars/index.html.erb within layouts/application
+  Rendered calendars/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/second" for 1.214.48.195 at 2019-08-10 12:57:37 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/home/second"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 1.214.48.195 at 2019-08-10 12:57:44 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 1.214.48.195 at 2019-08-10 12:58:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 1.214.48.195 at 2019-08-10 13:07:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (468.6ms)
+Completed 200 OK in 598ms (Views: 593.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 13:07:17 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (16.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "diaries"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "diaries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE  INDEX "index_diaries_on_user_id" ON "diaries" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateChats (20190810134725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190810134725_create_chats.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "chats" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "message" text, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190810134725_create_chats.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190810134725"]]
+  ↳ bin/rails:9
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 13:52:30 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5968ms (Views: 5963.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 13:59:26 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 286ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:00:50 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:00:52 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:01:26 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:01:52 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:01:53 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:02:39 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:02:41 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:04:22 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:04:23 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:04:25 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:04:34 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:05:18 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:12 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:13 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:15 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:15 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:23 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:25 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:25 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:25 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:25 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:26 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MessagesController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:56 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MessagesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:06:58 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MessagesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/messages" for 1.214.48.195 at 2019-08-10 14:07:23 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 564ms (Views: 559.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:07:40 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/environment/mate/app/controllers/chats_controller.rb:41: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/chats_controller.rb:41: syntax error, unexpected end, expecting end-of-input
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:07:46 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/environment/mate/app/controllers/chats_controller.rb:41: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/chats_controller.rb:41: syntax error, unexpected end, expecting end-of-input
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:08:35 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 62ms (Views: 54.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:05 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:05.177677"], ["updated_at", "2019-08-10 14:09:05.177677"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:06 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:06.517800"], ["updated_at", "2019-08-10 14:09:06.517800"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.0ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:06 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:06.885561"], ["updated_at", "2019-08-10 14:09:06.885561"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:07 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:07.209522"], ["updated_at", "2019-08-10 14:09:07.209522"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:07 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:07.405570"], ["updated_at", "2019-08-10 14:09:07.405570"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:07 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:07.579794"], ["updated_at", "2019-08-10 14:09:07.579794"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.8ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:08 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:08.517949"], ["updated_at", "2019-08-10 14:09:08.517949"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.8ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:08 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:08.732877"], ["updated_at", "2019-08-10 14:09:08.732877"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:09 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:09.185598"], ["updated_at", "2019-08-10 14:09:09.185598"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:09 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:09.387893"], ["updated_at", "2019-08-10 14:09:09.387893"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.8ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:09 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4rKk7EwNGHu8ECN5xJcx7s0o+ye2/pJXlLuILNTQXI5iYzAFUOBgjSNhHu7zjfER9Ocbvog3zFZR+RDI8K/93Q==", "chat"=>{"message"=>"hello world", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello world"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:09.643484"], ["updated_at", "2019-08-10 14:09:09.643484"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:09:12 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:09:28 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-10 14:09:38 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xpznw8Anrutr1m4aEc+HhROu1dNAhlmLcC9W9zIgHtlGTXMq3MrWHfSnU40m1Ud6KmE1Sn5PB4q1bc4TFl+/ig==", "chat"=>{"message"=>"dfsdlkjldf", "username"=>"winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.9ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "dfsdlkjldf"], ["username", "winnie"], ["created_at", "2019-08-10 14:09:38.168478"], ["updated_at", "2019-08-10 14:09:38.168478"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.9ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:10:43 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 1.214.48.195 at 2019-08-10 14:11:52 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-13 12:39:35 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (482.8ms)
+Completed 200 OK in 614ms (Views: 608.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-13 12:39:37 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:39:42 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 55ms (Views: 42.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:53 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:53.815300"], ["updated_at", "2019-08-13 12:39:53.815300"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:54 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:54.848495"], ["updated_at", "2019-08-13 12:39:54.848495"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:55 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:55.010438"], ["updated_at", "2019-08-13 12:39:55.010438"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:55 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:55.208282"], ["updated_at", "2019-08-13 12:39:55.208282"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:56 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:56.292320"], ["updated_at", "2019-08-13 12:39:56.292320"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:56 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:56.795197"], ["updated_at", "2019-08-13 12:39:56.795197"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:56 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:56.890699"], ["updated_at", "2019-08-13 12:39:56.890699"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:57.190309"], ["updated_at", "2019-08-13 12:39:57.190309"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:57.414293"], ["updated_at", "2019-08-13 12:39:57.414293"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:39:57 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:39:57.638811"], ["updated_at", "2019-08-13 12:39:57.638811"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:40:45 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:40:45.256167"], ["updated_at", "2019-08-13 12:40:45.256167"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:40:47 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:40:47.394745"], ["updated_at", "2019-08-13 12:40:47.394745"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:40:48 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7BQkCQziiHolhjU7jdoSD2QCtNOg5X9Qmop4inIHK8q/VBK4tKatdvyYrmkfEtvkZDx5fiXJX0l4+ZSUZ+SD6w==", "chat"=>{"message"=>"hihihi", "username"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (1.5ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihihi"], ["username", "tt"], ["created_at", "2019-08-13 12:40:48.574280"], ["updated_at", "2019-08-13 12:40:48.574280"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (1.8ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.3ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:41:38 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 147ms (Views: 145.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:41:46 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BXhQyFFlc0TzjDSzH62zE8rBVGONfaEBZFdlFQKiv95WOGZ56SFWSCqSr+GNZXr4yv+ZzghRgRiGJIkLF0EX/w==", "chat"=>{"message"=>"aaa", "username"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (1.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "aaa"], ["username", "a"], ["created_at", "2019-08-13 12:41:46.383504"], ["updated_at", "2019-08-13 12:41:46.383504"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (2.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 3.8ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:47:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BXhQyFFlc0TzjDSzH62zE8rBVGONfaEBZFdlFQKiv95WOGZ56SFWSCqSr+GNZXr4yv+ZzghRgRiGJIkLF0EX/w==", "chat"=>{"message"=>"aaa", "username"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.2ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "aaa"], ["username", "a"], ["created_at", "2019-08-13 12:47:05.487388"], ["updated_at", "2019-08-13 12:47:05.487388"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:49:49 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BXhQyFFlc0TzjDSzH62zE8rBVGONfaEBZFdlFQKiv95WOGZ56SFWSCqSr+GNZXr4yv+ZzghRgRiGJIkLF0EX/w==", "chat"=>{"message"=>"aaa", "username"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "aaa"], ["username", "a"], ["created_at", "2019-08-13 12:49:49.891697"], ["updated_at", "2019-08-13 12:49:49.891697"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+Pusher::ConfigurationError (missing key `app_id' in the client configuration):
+  
+app/models/chat.rb:6:in `notify_pusher'
+app/controllers/chats_controller.rb:26:in `block in create'
+app/controllers/chats_controller.rb:25:in `create'
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:55:00 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 660ms (Views: 648.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:55:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnQoWeyS92rwL0ZE/nD2vAavmUwY2L5Vdjv/GZNCLChdNB7oVNbSZikx3RZsuD9XBpFU4Z30nkyUSBMHhqGECQ==", "chat"=>{"message"=>"aa", "username"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "aa"], ["username", "a"], ["created_at", "2019-08-13 12:55:05.333341"], ["updated_at", "2019-08-13 12:55:05.333341"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.6ms)
+Completed 201 Created in 174ms (Views: 6.5ms | ActiveRecord: 14.6ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:55:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnQoWeyS92rwL0ZE/nD2vAavmUwY2L5Vdjv/GZNCLChdNB7oVNbSZikx3RZsuD9XBpFU4Z30nkyUSBMHhqGECQ==", "chat"=>{"message"=>"hihi", "username"=>"a"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihi"], ["username", "a"], ["created_at", "2019-08-13 12:55:21.511788"], ["updated_at", "2019-08-13 12:55:21.511788"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.6ms)
+Completed 201 Created in 36ms (Views: 7.3ms | ActiveRecord: 12.5ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:55:44 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnQoWeyS92rwL0ZE/nD2vAavmUwY2L5Vdjv/GZNCLChdNB7oVNbSZikx3RZsuD9XBpFU4Z30nkyUSBMHhqGECQ==", "chat"=>{"message"=>"hh", "username"=>"bb"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hh"], ["username", "bb"], ["created_at", "2019-08-13 12:55:44.306813"], ["updated_at", "2019-08-13 12:55:44.306813"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 82ms (Views: 6.8ms | ActiveRecord: 12.9ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:55:45 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnQoWeyS92rwL0ZE/nD2vAavmUwY2L5Vdjv/GZNCLChdNB7oVNbSZikx3RZsuD9XBpFU4Z30nkyUSBMHhqGECQ==", "chat"=>{"message"=>"hh", "username"=>"bb"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hh"], ["username", "bb"], ["created_at", "2019-08-13 12:55:45.871882"], ["updated_at", "2019-08-13 12:55:45.871882"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 32ms (Views: 4.9ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:55:46 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DnQoWeyS92rwL0ZE/nD2vAavmUwY2L5Vdjv/GZNCLChdNB7oVNbSZikx3RZsuD9XBpFU4Z30nkyUSBMHhqGECQ==", "chat"=>{"message"=>"hh", "username"=>"bb"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hh"], ["username", "bb"], ["created_at", "2019-08-13 12:55:46.992547"], ["updated_at", "2019-08-13 12:55:46.992547"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.6ms)
+Completed 201 Created in 30ms (Views: 4.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:56:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:56:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:56:30 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C66PpH3DVhkBVmiL3bqzlbimg1hz5NPv2kT8WhlxZ8JY7rkVxYdzFdhI89lPcnp+uJhO9fbI8/Y4NxBEDJLP4w==", "chat"=>{"message"=>"hihi", "username"=>"cc"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hihi"], ["username", "cc"], ["created_at", "2019-08-13 12:56:30.887441"], ["updated_at", "2019-08-13 12:56:30.887441"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 37ms (Views: 4.2ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:57:58 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 446ms (Views: 435.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 12:58:00 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 12:58:27 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ehWpAK07Dd4CTIxWs6/JWaYvz4ZbSrDeE691WfeL9nEpVZ+xFX8o0ttSFwQhZwCyphECK95mkMfx3JlH4mheUA==", "chat"=>{"message"=>"hello?", "username"=>"user1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.5ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "hello?"], ["username", "user1"], ["created_at", "2019-08-13 12:58:27.256855"], ["updated_at", "2019-08-13 12:58:27.256855"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.6ms)
+Completed 201 Created in 94ms (Views: 4.3ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:01:35 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 2718ms (Views: 2716.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:01:38 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 13:01:55 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAMkzN2ThH3V0tBMfyRVeCel/8zE2UOuRrJVyy30rtNjQxJ9ZdehcQzMSx7t7JyTJ5syYUH1Y7ekwbnVOBcG8g==", "chat"=>{"message"=>"안녕?", "username"=>"test2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "안녕?"], ["username", "test2"], ["created_at", "2019-08-13 13:01:55.224858"], ["updated_at", "2019-08-13 13:01:55.224858"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 38ms (Views: 4.6ms | ActiveRecord: 13.7ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 13:02:00 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bf3Rawj/qnx6Fjbqscv1rMbZIHmTTopt11t4AOS1cMNWvefasLuPcKMIrbgjAzxHxuft1BZiqnQ1KJQe8VbY4g==", "chat"=>{"message"=>"반가워", "username"=>"test1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "반가워"], ["username", "test1"], ["created_at", "2019-08-13 13:02:00.515229"], ["updated_at", "2019-08-13 13:02:00.515229"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 34ms (Views: 3.9ms | ActiveRecord: 12.3ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 13:02:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAMkzN2ThH3V0tBMfyRVeCel/8zE2UOuRrJVyy30rtNjQxJ9ZdehcQzMSx7t7JyTJ5syYUH1Y7ekwbnVOBcG8g==", "chat"=>{"message"=>"그래 안녕", "username"=>"test2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.4ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "그래 안녕"], ["username", "test2"], ["created_at", "2019-08-13 13:02:04.629285"], ["updated_at", "2019-08-13 13:02:04.629285"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.5ms)
+Completed 201 Created in 24ms (Views: 4.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/" for 121.134.206.100 at 2019-08-13 13:20:01 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calendars" for 121.134.206.100 at 2019-08-13 13:20:03 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CalendarsController#index as HTML
+  Rendering calendars/index.html.erb within layouts/application
+  Rendered calendars/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/diaries" for 121.134.206.100 at 2019-08-13 13:20:04 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DiariesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 121.134.206.100 at 2019-08-13 13:20:05 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/shared/_carousel.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 62ms (Views: 49.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/picnics" for 121.134.206.100 at 2019-08-13 13:20:07 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PicnicsController#index as HTML
+  Rendering picnics/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/picnics/_tab-all.html.erb:3
+  Rendered picnics/_tab-all.html.erb (16.8ms)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 0]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (5.7ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 1]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.7ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 2]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (20.0ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 3]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.9ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 4]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.7ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 5]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (2.8ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 6]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (1.4ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 7]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (1.7ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 8]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (1.3ms)
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."area" = ?[0m  [["area", 9]]
+  ↳ app/views/picnics/_tab-area.html.erb:3
+  Rendered picnics/_tab-area.html.erb (1.2ms)
+  Rendered picnics/_tabs.html.erb (71.1ms)
+  Rendered picnics/index.html.erb within layouts/application (73.8ms)
+Completed 200 OK in 117ms (Views: 108.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/diaries" for 121.134.206.100 at 2019-08-13 13:20:12 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DiariesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 121.134.206.100 at 2019-08-13 13:20:12 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/shared/_carousel.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:20:13 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 121.134.206.100 at 2019-08-13 13:20:15 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/shared/_carousel.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:20:16 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/chats.json" for 121.134.206.100 at 2019-08-13 13:20:31 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAMkzN2ThH3V0tBMfyRVeCel/8zE2UOuRrJVyy30rtNjQxJ9ZdehcQzMSx7t7JyTJ5syYUH1Y7ekwbnVOBcG8g==", "chat"=>{"message"=>"드디어 되는구나", "username"=>"test2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (0.6ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "드디어 되는구나"], ["username", "test2"], ["created_at", "2019-08-13 13:20:31.820417"], ["updated_at", "2019-08-13 13:20:31.820417"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (0.6ms)
+Completed 201 Created in 94ms (Views: 4.9ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:26:51 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1506ms (Views: 1504.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:27:49 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1318ms (Views: 1317.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:28:41 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1324ms (Views: 1323.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/chats" for 121.134.206.100 at 2019-08-13 13:29:21 +0000
+Cannot render console from 121.134.206.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1360ms (Views: 1358.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 1.214.48.195 at 2019-08-16 12:04:10 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1377.6ms)
+Completed 200 OK in 1477ms (Views: 1467.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 1.214.48.195 at 2019-08-16 12:04:11 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 120ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats" for 1.214.48.195 at 2019-08-16 12:04:14 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 91ms (Views: 73.1ms | ActiveRecord: 1.5ms)
+
+

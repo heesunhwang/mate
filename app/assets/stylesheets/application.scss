@@ -47,3 +47,46 @@
  .banner-text p{color:#fff;}
 
  /* -------------- 로그인 화면 끝 -------------- */
+ 
+ /* -------------- 채팅 화면 -------------- */
+
+  @import "bootstrap";
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      height:100%;
+    }
+
+    .full-height {
+     max-height:calc(100% - 56px);
+     overflow: hidden;
+    }
+
+    input.form-control.sidebar-form {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .chat-box {
+      height: 94vh;
+      overflow: scroll;
+    }
+
+    .chat {
+      border-radius: 3px;
+      padding: 0rem 2rem 0 1rem;
+    }
+
+    .chat-username {
+      font-size: 0.7rem;
+    }
+
+    .chat-message {
+      font-size: 0.85rem;
+    }
+    
+/* -------------- 채팅 화면 끝 -------------- */
