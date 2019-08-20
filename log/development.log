@@ -2613,3 +2613,28 @@ Processing by ChatsController#index as HTML
 Completed 200 OK in 91ms (Views: 73.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/chats" for 1.214.48.195 at 2019-08-16 12:06:34 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#index as HTML
+  Rendering chats/index.html.erb within layouts/application
+  [1m[36mChat Load (0.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/views/chats/index.html.erb:18
+  Rendered chats/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/chats.json" for 1.214.48.195 at 2019-08-16 12:07:05 +0000
+Cannot render console from 1.214.48.195! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChatsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SInmGVa0tv+Uvw7hTfC8gPqyvr/sm4GFZE+LHBLUaDkBpTJDIR+sXbUwBYae/zjIgSb7bXL7vduhf/NHK9KG9w==", "chat"=>{"message"=>"2019년 8월 17일 오후 9시 6분 chat 기능 브랜치에 푸시 완료하였습니다~", "username"=>"Winnie"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[36mChat Create (1.6ms)[0m  [1m[32mINSERT INTO "chats" ("message", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["message", "2019년 8월 17일 오후 9시 6분 chat 기능 브랜치에 푸시 완료하였습니다~"], ["username", "Winnie"], ["created_at", "2019-08-16 12:07:05.691709"], ["updated_at", "2019-08-16 12:07:05.691709"]]
+  ↳ app/controllers/chats_controller.rb:26
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/chats_controller.rb:26
+  Rendering chats/show.json.jbuilder
+  Rendered chats/show.json.jbuilder (1.5ms)
+Completed 201 Created in 184ms (Views: 5.3ms | ActiveRecord: 13.6ms)
+
+
