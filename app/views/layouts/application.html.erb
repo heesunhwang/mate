@@ -6,8 +6,11 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script> 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    </head>
+  
 
 
   <meta charset="utf-8">
@@ -43,6 +46,9 @@
           </li>
           <li class="nav-item dropdown">
             <%= link_to "Wishlist", diaries_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= link_to "Chat", chats_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <% if user_signed_in? %>
