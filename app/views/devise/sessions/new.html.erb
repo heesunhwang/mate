@@ -4,18 +4,19 @@
     <div class="col-md-4 login-sec">
       <h2 class="text-center">Login Now</h2>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name), class:"login-form") do |f| %>
-        <div class="form-group">
+        <div class="form-group" style="margin-left: 10px">
           <%= f.label :email, class:"text-uppercase" %><br />
           <%= f.email_field :email, autofocus: true, class: "form-control" %>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="margin-left: 10px">
           <%= f.label :password, class:"text-uppercase" %><br />
           <%= f.password_field :password, class: "form-control" %>
         </div>
-        <div class="actions">
+        <div class="actions" style="margin-left: 10px">
           <%= f.submit "Log in" %>
         </div>
       <% end %>
+      <br>
       <%= render "devise/shared/links" %>
       <div class="copy-text">Mate <i class="fa fa-heart"></i> Mate</div>
     </div>
